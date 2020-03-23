@@ -1,4 +1,4 @@
-from NOVA_PYTHON_TEST.WEPONS_PY.Classes.ShootingOfficer import ShootingOfficer
+from Classes import ShootingOfficer
 from pony import orm
 class ShotingRange:
     """

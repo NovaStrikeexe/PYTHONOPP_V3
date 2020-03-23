@@ -1,4 +1,4 @@
-from NOVA_PYTHON_TEST.WEPONS_PY.Classes import Human
+from Classes import Human
 
 
 class Client(Human.Human):

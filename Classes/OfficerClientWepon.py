@@ -1,4 +1,4 @@
-from NOVA_PYTHON_TEST.WEPONS_PY.Classes import Client, ShootingOfficer, Cur_wepon, Action
+from Classes import Client, ShootingOfficer, Cur_wepon, Action
 """
 class OfficerClientWepon 
 created to populate the list of events 

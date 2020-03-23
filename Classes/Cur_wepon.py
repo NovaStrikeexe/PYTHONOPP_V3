@@ -1,4 +1,4 @@
-from NOVA_PYTHON_TEST.WEPONS_PY.Classes import List_of_upgrades, Wepons
+from Classes import List_of_upgrades, Wepons
 
 
 class Cur_wepon(Wepons.Wepons):
