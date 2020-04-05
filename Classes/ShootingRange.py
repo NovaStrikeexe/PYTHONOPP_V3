@@ -1,6 +1,6 @@
 from Classes import ShootingOfficer
-from pony.orm import *
-db = Database()
+from Classes.Database import *
+
 
 class ShotingRange(db.Entity):
     """

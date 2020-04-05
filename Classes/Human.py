@@ -1,7 +1,4 @@
-
-from pony.orm import *
-
-db = Database()
+from Classes.Database import *
 
 
 class Human(db.Entity):

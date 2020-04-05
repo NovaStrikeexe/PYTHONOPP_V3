@@ -1,6 +1,4 @@
-from pony.orm import *
-
-db = Database()
+from Classes.Database import *
 
 
 class Wepons(db.Entity):

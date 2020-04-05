@@ -1,5 +1,5 @@
 from Classes import Human
-from pony.orm import *
+from Classes.Database import *
 
 
 class Client(Human.Human):

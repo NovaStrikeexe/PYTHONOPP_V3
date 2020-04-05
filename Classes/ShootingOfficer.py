@@ -1,5 +1,5 @@
 from Classes import Human
-from pony.orm import *
+from Classes.Database import *
 """
 The ShootingOfficer  
 Is the heir of the Human class

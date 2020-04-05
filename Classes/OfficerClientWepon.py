@@ -1,5 +1,5 @@
 from Classes import Client, ShootingOfficer, Cur_wepon, Action
-from pony.orm import *
+from Classes.Database import *
 """
 class OfficerClientWepon 
 created to populate the list of events 

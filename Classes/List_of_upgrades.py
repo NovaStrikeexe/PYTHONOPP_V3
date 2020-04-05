@@ -1,7 +1,4 @@
-from pony.orm import *
-
-db = Database()
-
+from Classes.Database import *
 
 class List_of_upgrades(db.Entity):
     """Class List_of_upgrages is responsible for the list of modifications for each weapon

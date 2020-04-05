@@ -1,5 +1,5 @@
 from Classes import List_of_upgrades, Wepons
-from pony.orm import *
+from Classes.Database import *
 
 
 class Cur_wepon(Wepons.Wepons):
