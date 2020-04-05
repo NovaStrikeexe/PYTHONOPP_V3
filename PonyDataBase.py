@@ -59,7 +59,6 @@ with db_session:
 
     s_range = ShotingRange(sum_of_active_targets=0, sum_of_all_targets=0, type_of_shooting_range=0, officer=of1)
 
-
     id_of_client = input("Client id: ")  # Удаление человека по ID
     client = Client.select(lambda c: c.id == id_of_client)
     client.delete()
