@@ -2,7 +2,7 @@ from Classes import ShootingOfficer
 from Classes.Database import *
 
 
-class ShotingRange(db.Entity):
+class ShootingRange(db.Entity):
     """
     Class ShootingRange class describing events that occur in the dash
     Also it includes ShootingOfficer
@@ -23,4 +23,4 @@ class ShotingRange(db.Entity):
     sum_of_active_targets = Required(int)
     sum_of_all_targets = Required(int)
     type_of_shooting_range = Required(bool)
-    officer = Set(ShootingOfficer)
+    officer = Set("ShootingOfficer")

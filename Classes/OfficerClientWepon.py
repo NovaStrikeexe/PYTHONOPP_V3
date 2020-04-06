@@ -6,7 +6,7 @@ created to populate the list of events
 and participants of these events
 """
 
-class OfficerClientWepon:
+class OfficerClientWepon(db.Entity):
     """
         :param client:Is an event participant
         :type client: object type client
@@ -25,7 +25,7 @@ class OfficerClientWepon:
         :watch in class Action.py
     """
     id_OfficerClientWepon = PrimaryKey(int, auto=True)
-    client = Set(Client)
-    officer = Set(ShootingOfficer)
-    cur_wp = Set(Cur_wepon)
-    Action = Set(Action)
+    client = Set("Client")
+    officer = Set("ShootingOfficer")
+    cur_wp = Set("Cur_wepon")
+    action = Set("Action")

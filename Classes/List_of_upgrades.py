@@ -1,3 +1,4 @@
+from Classes.Cur_wepon import Cur_wepon
 from Classes.Database import *
 
 class List_of_upgrades(db.Entity):
@@ -20,3 +21,4 @@ class List_of_upgrades(db.Entity):
     mag = Required(int)
     type_of_mag = Required(str)
     type_of_bulets = Required(str)
+    cur_wepons = Set("Cur_wepon")

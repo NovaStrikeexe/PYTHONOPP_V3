@@ -26,4 +26,5 @@ It has an additional field in_action which shows the state of the object at the 
         :param list_of_upgrades:
         :watch in class List_of_upgrades.py
     """
-    list_of_upgrades = Set(List_of_upgrades)
+    list_of_upgrades = Set("List_of_upgrades")
+    officerClientWepon = Set("OfficerClientWepon")

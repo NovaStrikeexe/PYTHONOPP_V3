@@ -1,3 +1,4 @@
+from Classes.Human import Human
 from Classes.Client import Client
 from Classes.Wepons import Wepons
 from Classes.ShootingOfficer import ShootingOfficer
@@ -5,19 +6,19 @@ from Classes.List_of_upgrades import List_of_upgrades
 from Classes.Action import Action
 from Classes.Cur_wepon import Cur_wepon
 from Classes.OfficerClientWepon import OfficerClientWepon
-from Classes.ShootingRange import ShotingRange
+from Classes.ShootingRange import ShootingRange
+from Classes.Database import db
 from pony.orm import *
 
-db = Database()
-db.bind(provider='sqlite', filename='database.sqlite', create_db=True)
+db.bind(provider='sqlite', filename='Weponbase.sqlite', create_db=True)
 set_sql_debug(True)
 db.generate_mapping(create_tables=True)
 
 with db_session:
-    cl1 = Client(name_of_human="Nova", s_name_of_human="Strike", age_of_human=20, type_of_visit=0)
-    cl2 = Client(name_of_human="Vova", s_name_of_human="Pyke", age_of_human=30, type_of_visit=0)
-    cl3 = Client(name_of_human="Lex", s_name_of_human="Strike", age_of_human=20, type_of_visit=1)
-    cl4 = Client(name_of_human="Rex", s_name_of_human="Strike", age_of_human=25, type_of_visit=1)
+    cl1 = Client(name_of_human="Nova", s_name_of_human="Strike", age_of_human=20, type_of_visit=False)
+    cl2 = Client(name_of_human="Vova", s_name_of_human="Pyke", age_of_human=30, type_of_visit=False)
+    cl3 = Client(name_of_human="Lex", s_name_of_human="Strike", age_of_human=20, type_of_visit=True)
+    cl4 = Client(name_of_human="Rex", s_name_of_human="Strike", age_of_human=25, type_of_visit=True)
 
     of1 = ShootingOfficer(name_of_human="Jacob", s_name_of_human="Wikers", age_of_human=45, work_experience="10-Years",
                           work_schedule="800/1700")
@@ -57,5 +58,5 @@ with db_session:
     of_cl_wp_1 = OfficerClientWepon(client=cl4, officer=of2, cur_wp=cwp3, action=act1)
     of_cl_wp_2 = OfficerClientWepon(client=cl4, officer=of2, cur_wp=cwp3, action=act2)
 
-    s_range = ShotingRange(sum_of_active_targets=0, sum_of_all_targets=0, type_of_shooting_range=0, officer=of1)
+    s_range = ShootingRange(sum_of_active_targets=0, sum_of_all_targets=0, type_of_shooting_range=0, officer=of1)
 

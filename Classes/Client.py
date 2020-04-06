@@ -18,6 +18,7 @@ class Client(Human.Human):
            :type type_of_visit: bool
            """
     type_of_visit = Required(bool)
+    officerClientWepon = Set("OfficerClientWepon")
     """
     Client is a class a descendant of the class man,
     which will inherit a number of its fields and expand it with its own:

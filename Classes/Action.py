@@ -9,3 +9,4 @@ class Action(db.Entity):
     """
     id_action = PrimaryKey(int, auto=True)
     type_of_action = Required(str)
+    OfficerClientWepon = Set("OfficerClientWepon")

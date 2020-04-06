@@ -34,3 +34,5 @@ class ShootingOfficer(Human.Human):
     """
     work_experience = Required(str)
     work_schedule = Required(str)
+    OfficerClientWepon = Set("OfficerClientWepon")
+    ShootingRange = Set("ShootingRange")

@@ -2,7 +2,6 @@ from Classes.Database import *
 
 
 class Human(db.Entity):
-    id = PrimaryKey(int, auto=True)
     name_of_human = Required(str)
     s_name_of_human = Required(str)
     age_of_human = Required(int)
