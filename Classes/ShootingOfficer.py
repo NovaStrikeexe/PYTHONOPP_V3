@@ -23,9 +23,6 @@ class ShootingOfficer(Human.Human):
         :param age_of_human:
         :watch in class Human.py
 
-        :param level_of_qualification:
-        :watch in class Human.py
-
         :param work_experience: Set work experience
         :type work_experience: str
 
@@ -35,4 +32,4 @@ class ShootingOfficer(Human.Human):
     work_experience = Required(str)
     work_schedule = Required(str)
     OfficerClientWepon = Set("OfficerClientWepon")
-    ShootingRange = Set("ShootingRange")
+

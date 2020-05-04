@@ -1,4 +1,4 @@
-from Classes.Human import Human
+
 from Classes.Client import Client
 from Classes.Wepons import Wepons
 from Classes.ShootingOfficer import ShootingOfficer
@@ -6,7 +6,6 @@ from Classes.List_of_upgrades import List_of_upgrades
 from Classes.Action import Action
 from Classes.Cur_wepon import Cur_wepon
 from Classes.OfficerClientWepon import OfficerClientWepon
-from Classes.ShootingRange import ShootingRange
 from Classes.Database import db
 from pony.orm import *
 
@@ -58,5 +57,5 @@ with db_session:
     of_cl_wp_1 = OfficerClientWepon(client=cl4, officer=of2, cur_wp=cwp3, action=act1)
     of_cl_wp_2 = OfficerClientWepon(client=cl4, officer=of2, cur_wp=cwp3, action=act2)
 
-    s_range = ShootingRange(sum_of_active_targets=0, sum_of_all_targets=0, type_of_shooting_range=0, officer=of1)
+
 
