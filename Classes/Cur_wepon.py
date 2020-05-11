@@ -1,4 +1,4 @@
-from Classes import List_of_upgrades, Wepons
+from Classes import  Wepons
 from Classes.Database import *
 
 

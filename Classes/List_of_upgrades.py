@@ -1,4 +1,3 @@
-from Classes.Cur_wepon import Cur_wepon
 from Classes.Database import *
 
 class List_of_upgrades(db.Entity):

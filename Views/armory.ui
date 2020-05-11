@@ -26,8 +26,8 @@
     <property name="currentIndex">
      <number>4</number>
     </property>
-    <widget class="QWidget" name="page">
-     <widget class="QFrame" name="frame">
+    <widget class="QWidget" name="action_page">
+     <widget class="QFrame" name="action_frame">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -42,7 +42,7 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QTableWidget" name="tableWidget">
+      <widget class="QTableWidget" name="action">
        <property name="geometry">
         <rect>
          <x>0</x>
@@ -77,7 +77,7 @@
         </property>
        </column>
       </widget>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="add_new_note">
        <property name="geometry">
         <rect>
          <x>140</x>
@@ -90,7 +90,7 @@
         <string>Add a new note</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="edit_selected">
        <property name="geometry">
         <rect>
          <x>250</x>
@@ -103,7 +103,7 @@
         <string>Edit selected note</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="delete_selected">
        <property name="geometry">
         <rect>
          <x>140</x>
@@ -118,8 +118,8 @@
       </widget>
      </widget>
     </widget>
-    <widget class="QWidget" name="page_2">
-     <widget class="QFrame" name="frame_2">
+    <widget class="QWidget" name="client_page">
+     <widget class="QFrame" name="client_frame">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -134,7 +134,7 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="client_name_line_Edit">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -170,7 +170,7 @@
         <string>Second name of client:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_2">
+      <widget class="QLineEdit" name="client_second_name_line_Edit">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -193,7 +193,7 @@
         <string>Age of client:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_3">
+      <widget class="QLineEdit" name="client_age_line_Edit">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -203,7 +203,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QRadioButton" name="radioButton">
+      <widget class="QRadioButton" name="type_of_visit_radioButton1">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -216,7 +216,7 @@
         <string>Type of visit:One</string>
        </property>
       </widget>
-      <widget class="QRadioButton" name="radioButton_2">
+      <widget class="QRadioButton" name="type_of_visit_radioButton2">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -229,7 +229,7 @@
         <string>Type of visit:All</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="add_client">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -242,7 +242,7 @@
         <string>Add client</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox">
+      <widget class="QComboBox" name="client_comboBox">
        <property name="geometry">
         <rect>
          <x>370</x>
@@ -265,7 +265,7 @@
         <string>Chousing client from database:</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_5">
+      <widget class="QPushButton" name="client_clear">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -278,7 +278,7 @@
         <string>Clear all</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_6">
+      <widget class="QPushButton" name="cancel_client">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -291,7 +291,7 @@
         <string>Cancel</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QPushButton" name="to_officer">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -306,8 +306,8 @@
       </widget>
      </widget>
     </widget>
-    <widget class="QWidget" name="page_3">
-     <widget class="QFrame" name="frame_3">
+    <widget class="QWidget" name="officer_page">
+     <widget class="QFrame" name="officer_frame">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -322,7 +322,7 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QComboBox" name="comboBox_2">
+      <widget class="QComboBox" name="officer_comboBox">
        <property name="geometry">
         <rect>
          <x>410</x>
@@ -345,7 +345,7 @@
         <string>Chousing officer from database:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_4">
+      <widget class="QLineEdit" name="officer_name_lineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -381,7 +381,7 @@
         <string>Second name of officer:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_5">
+      <widget class="QLineEdit" name="officer_second_name_lineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -404,7 +404,7 @@
         <string>Age of officer:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_6">
+      <widget class="QLineEdit" name="officer_age_lineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -427,7 +427,7 @@
         <string>Work experience:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_7">
+      <widget class="QLineEdit" name="work_exeperience_lineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -450,7 +450,7 @@
         <string>Work schedule:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_8">
+      <widget class="QLineEdit" name="work_schedule_lineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -460,7 +460,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="add_officer">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -473,7 +473,7 @@
         <string>Add officer</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_9">
+      <widget class="QPushButton" name="clear_officer">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -486,7 +486,7 @@
         <string>Clear all</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_10">
+      <widget class="QPushButton" name="cancel_officer">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -499,7 +499,7 @@
         <string>Cancel</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_11">
+      <widget class="QPushButton" name="to_wepon">
        <property name="geometry">
         <rect>
          <x>90</x>
@@ -512,7 +512,7 @@
         <string>To wepon</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_12">
+      <widget class="QPushButton" name="back_to_client">
        <property name="geometry">
         <rect>
          <x>90</x>
@@ -527,8 +527,8 @@
       </widget>
      </widget>
     </widget>
-    <widget class="QWidget" name="page_4">
-     <widget class="QFrame" name="frame_4">
+    <widget class="QWidget" name="wepon_page">
+     <widget class="QFrame" name="wepon_frame">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -543,7 +543,7 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QComboBox" name="comboBox_3">
+      <widget class="QComboBox" name="wepon_comboBox">
        <property name="geometry">
         <rect>
          <x>400</x>
@@ -605,7 +605,7 @@
         <string>Ammo taken:</string>
        </property>
       </widget>
-      <widget class="QRadioButton" name="radioButton_3">
+      <widget class="QRadioButton" name="action_radioButton1">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -618,7 +618,7 @@
         <string>Given</string>
        </property>
       </widget>
-      <widget class="QRadioButton" name="radioButton_4">
+      <widget class="QRadioButton" name="action_radioButton2">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -631,7 +631,7 @@
         <string>Backed</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_9">
+      <widget class="QLineEdit" name="wepon_mark_lineEdit">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -641,7 +641,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_10">
+      <widget class="QLineEdit" name="wepon_calibr_lineEdit">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -651,7 +651,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_11">
+      <widget class="QLineEdit" name="wepon_ammo_lineEdit">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -661,7 +661,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_13">
+      <widget class="QPushButton" name="add_wepon">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -674,7 +674,7 @@
         <string>Add wepon</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_14">
+      <widget class="QPushButton" name="clear_wepon">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -687,7 +687,7 @@
         <string>Clear all</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_15">
+      <widget class="QPushButton" name="cancel_wepon">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -700,7 +700,7 @@
         <string>Cancel</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_16">
+      <widget class="QPushButton" name="back_to_officer">
        <property name="geometry">
         <rect>
          <x>110</x>
@@ -713,7 +713,7 @@
         <string>Back to officer</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_17">
+      <widget class="QPushButton" name="to_list_upgrades">
        <property name="geometry">
         <rect>
          <x>110</x>
@@ -728,8 +728,8 @@
       </widget>
      </widget>
     </widget>
-    <widget class="QWidget" name="page_5">
-     <widget class="QFrame" name="frame_5">
+    <widget class="QWidget" name="upgrade_page">
+     <widget class="QFrame" name="upgrade_frame">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -757,7 +757,7 @@
         <string>Scope:</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_4">
+      <widget class="QComboBox" name="upgrades_comboBox">
        <property name="geometry">
         <rect>
          <x>350</x>
@@ -767,7 +767,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_12">
+      <widget class="QLineEdit" name="upgrades_scope_lineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -803,7 +803,7 @@
         <string>Handle:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_13">
+      <widget class="QLineEdit" name="upgrades_handle_lineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -826,7 +826,7 @@
         <string>Mag:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_14">
+      <widget class="QLineEdit" name="upgrade_mag_lineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -849,7 +849,7 @@
         <string>Type of mag:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_15">
+      <widget class="QLineEdit" name="upgrades_type_of_mag_lineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -872,7 +872,7 @@
         <string>Type of ammo:</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_16">
+      <widget class="QLineEdit" name="upgrade_type_of_ammo_lineEdit">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -882,7 +882,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_18">
+      <widget class="QPushButton" name="add_list_of_upgrades">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -895,7 +895,7 @@
         <string>Add list of upgrades</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_19">
+      <widget class="QPushButton" name="clear_upgrade">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -908,7 +908,7 @@
         <string>Clear all</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_20">
+      <widget class="QPushButton" name="cancel_upgrade">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -921,7 +921,7 @@
         <string>Cancel</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_21">
+      <widget class="QPushButton" name="back_to_wepon">
        <property name="geometry">
         <rect>
          <x>150</x>
@@ -934,7 +934,7 @@
         <string>Back to wepon</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_22">
+      <widget class="QPushButton" name="to_list">
        <property name="geometry">
         <rect>
          <x>160</x>
