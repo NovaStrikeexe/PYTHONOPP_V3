@@ -9,7 +9,7 @@ from Classes.OfficerClientWepon import OfficerClientWepon
 from Classes.Database import db
 from pony.orm import *
 
-db.bind(provider='sqlite', filename='Weponbase.sqlite', create_db=True)
+db.bind(provider='sqlite', filename='Views/Weponbase.sqlite', create_db=True)
 set_sql_debug(True)
 db.generate_mapping(create_tables=True)
 
@@ -28,15 +28,15 @@ with db_session:
     of3 = ShootingOfficer(name_of_human="Samuel", s_name_of_human="Wikers", age_of_human=25, work_experience="1-Years",
                           work_schedule="1200/1600")
 
-    wep1 = Wepons(mark_of_wepon="AK47", company_constrator="KALASHNIKOV", ammo=30, calibr=7.62)
-    wep2 = Wepons(mark_of_wepon="AK74", company_constrator="KALASHNIKOV", ammo=45, calibr=7.62)
-    wep3 = Wepons(mark_of_wepon="AK12", company_constrator="KALASHNIKOV", ammo=30, calibr=5.56)
-    wep4 = Wepons(mark_of_wepon="AK15", company_constrator="KALASHNIKOV", ammo=45, calibr=5.56)
+    wep1 = Wepons(mark_of_wepon="AK47", ammo=30, calibr=7.62)
+    wep2 = Wepons(mark_of_wepon="AK74", ammo=45, calibr=7.62)
+    wep3 = Wepons(mark_of_wepon="AK12",  ammo=30, calibr=5.56)
+    wep4 = Wepons(mark_of_wepon="AK15",  ammo=45, calibr=5.56)
 
-    wep5 = Wepons(mark_of_wepon="M16", company_constrator="COLT", ammo=30, calibr=5.56)
-    wep6 = Wepons(mark_of_wepon="M16A2", company_constrator="COLT", ammo=30, calibr=7.62)
-    wep7 = Wepons(mark_of_wepon="M16A4", company_constrator="COLT", ammo=30, calibr=5.56)
-    wep8 = Wepons(mark_of_wepon="M4A4", company_constrator="COLT", ammo=30, calibr=5.56)
+    wep5 = Wepons(mark_of_wepon="M16", ammo=30, calibr=5.56)
+    wep6 = Wepons(mark_of_wepon="M16A2",  ammo=30, calibr=7.62)
+    wep7 = Wepons(mark_of_wepon="M16A4",  ammo=30, calibr=5.56)
+    wep8 = Wepons(mark_of_wepon="M4A4",  ammo=30, calibr=5.56)
 
     lst1 = List_of_upgrades(scope="Acog", handle="Vertical Foregrip", mag=60, type_of_mag="Exenteded",
                             type_of_bulets="Default")
@@ -45,10 +45,10 @@ with db_session:
     lst3 = List_of_upgrades(scope="1P69", handle="Angled Foregrip", mag=10, type_of_mag="shorted",
                             type_of_bulets="Sniper")
 
-    cwp1 = Cur_wepon(mark_of_wepon="M16A4", company_constrator="COLT", ammo=30, calibr=7.338, list_of_upgrades=lst3)
-    cwp2 = Cur_wepon(mark_of_wepon="AK15", company_constrator="KALASHNIKOV", ammo=80, calibr=5.56,
+    cwp1 = Cur_wepon(mark_of_wepon="M16A4", ammo=30, calibr=7.338, list_of_upgrades=lst3)
+    cwp2 = Cur_wepon(mark_of_wepon="AK15",  ammo=80, calibr=5.56,
                      list_of_upgrades=lst2)
-    cwp3 = Cur_wepon(mark_of_wepon="AK47", company_constrator="KALASHNIKOV", ammo=60, calibr=7.62,
+    cwp3 = Cur_wepon(mark_of_wepon="AK47",  ammo=60, calibr=7.62,
                      list_of_upgrades=lst1)
 
     act1 = Action(type_of_action="Given")
